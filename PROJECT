@@ -1,0 +1,7 @@
+domain: raffis.github.io
+repo: github.com/raffis/ceasing-kustomize-controller
+resources:
+- group: kustomize.raffis.github.io
+  kind: CeasingKustomization
+  version: v1beta2
+version: "2"
