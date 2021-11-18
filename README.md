@@ -1,6 +1,5 @@
 # Ceasing kustomization controller
 
-[![.github/workflows/release.yml](https://github.com/raffis/ceasing-kustomize-controller/workflows/.github/workflows/release.yml/badge.svg)](https://github.com/raffis/ceasing-kustomize-controller/actions)
 [![Go Report Card](https://goreportcard.com/badge/github.com/raffis/ceasing-kustomize-controller)](https://goreportcard.com/report/github.com/raffis/ceasing-kustomize-controller)
 [![Coverage Status](https://coveralls.io/repos/github/raffis/ceasing-kustomize-controller/badge.svg?branch=master)](https://coveralls.io/github/raffis/ceasing-kustomize-controller?branch=master)
 [![Docker Pulls](https://img.shields.io/docker/pulls/raffis/ceasing-kustomize-controller.svg?maxAge=604800)](https://hub.docker.com/r/raffis/ceasing-kustomize-controller)
