@@ -9,7 +9,6 @@ require (
 	github.com/google/uuid v1.2.0 // indirect
 	github.com/onsi/ginkgo v1.16.4
 	github.com/onsi/gomega v1.15.0
-	github.com/prometheus/common v0.26.0
 	github.com/spf13/cast v1.3.1 // indirect
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.7.0
@@ -19,5 +18,4 @@ require (
 	k8s.io/apimachinery v0.22.2
 	k8s.io/client-go v0.22.2
 	sigs.k8s.io/controller-runtime v0.10.2
-	sigs.k8s.io/controller-tools v0.5.0 // indirect
 )
