@@ -1,16 +1,15 @@
 # Ceasing kustomization controller
 
-[![.github/workflows/action.yml](https://github.com/raffis/ceasing-kustomize-controller/workflows/.github/workflows/action.yml/badge.svg)](https://github.com/raffis/ceasing-kustomize-controller/actions)
+[![.github/workflows/release.yml](https://github.com/raffis/ceasing-kustomize-controller/workflows/.github/workflows/release.yml/badge.svg)](https://github.com/raffis/ceasing-kustomize-controller/actions)
 [![Go Report Card](https://goreportcard.com/badge/github.com/raffis/ceasing-kustomize-controller)](https://goreportcard.com/report/github.com/raffis/ceasing-kustomize-controller)
 [![Coverage Status](https://coveralls.io/repos/github/raffis/ceasing-kustomize-controller/badge.svg?branch=master)](https://coveralls.io/github/raffis/ceasing-kustomize-controller?branch=master)
 [![Docker Pulls](https://img.shields.io/docker/pulls/raffis/ceasing-kustomize-controller.svg?maxAge=604800)](https://hub.docker.com/r/raffis/ceasing-kustomize-controller)
 [![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/prometheus-ceasing-kustomize-controller)](https://artifacthub.io/packages/search?repo=prometheus-ceasing-kustomize-controller)
 
-
 A ceasing kustomization is a wrapper around flux2 kustomization CRD.
 It introduces a kustomization with an expiration time.
-After the expiration is reached the managed kustomization is removed from the cluster.
-The CeasingKustomization continues to gate the managed resource and won't read it as long as the CeasingKustomization exists.
+After the expiration is reached the managed kustomization is removed from the cluster and all resources created by the kustomization.
+The CeasingKustomization continues to gate the managed kustomization and will not recreate it.
 That way you can also distribute CeasingKustomizations via GitOps as you might already do with Kustomizations.
 
 **Note**: A CeasingKustomization always deploys the underlying kustomization as prunable no matter if it is set to true or false.
